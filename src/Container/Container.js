@@ -2,7 +2,7 @@ import React from 'react'
 import './Container.css'
 import Card from '../Card/Card'
 
-const Container = ({reservations}) => {
+const Container = ({ress}) => {
 
     const existingRes = reservations.map(res => 
         <Card 
