@@ -2,10 +2,9 @@ import React from 'react'
 import './Card.css'
 import PropTypes from 'prop-types'
 
-const Card = ({id, name, date, time, number}) => {
+const Card = ({name, date, time, number}) => {
     return (
         <div className="card">
-            {id}
             <h3>{name}</h3>
             <p>{date}</p>
             <p>{time}</p>
