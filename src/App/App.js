@@ -6,10 +6,13 @@ import Form from '../Form/Form'
 
 function App() {
   const [reservations, setReservations] = useState([])
+  const [error, setError] = useState('')
 
   useEffect(() => {
     getReservationData()
-    .then(data => setReservations(data))}, [])
+    .then(data => setReservations(data))
+    .catch((error) => {setError(error.message)})
+  }, [])
 
   const addResy = (newResy) => {
     setReservations(newResy)
@@ -22,7 +25,7 @@ function App() {
         <Form addResy={addResy} />
       </div>
       <div className='resy-container'>
-        <Container reservations={reservations}/>
+        { error !== '' ? error : <Container reservations={reservations}/>}
       </div>
     </div>
   )
