@@ -24,3 +24,10 @@
   grid-gap: 5vh;
   width: 100%;
 }
+
+.resy-form {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 2em;
+}
