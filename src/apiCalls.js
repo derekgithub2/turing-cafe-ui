@@ -5,7 +5,6 @@ const getReservationData = () => {
     .then(res => {
         if(!res.ok) {
             throw new Error('response not ok')
-            // refactor error
         }
         return res.json()
     })
