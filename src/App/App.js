@@ -25,7 +25,7 @@ function App() {
         <Form addResy={addResy} />
       </div>
       <div className='resy-container'>
-        { error !== '' ? error && <h2>There was an issue! {error}</h2> : <Container reservations={reservations}/>}
+        { error !== '' ? error && <h2>There was an issue! {error}</h2> : <Container ress={reservations}/>}
       </div>
     </div>
   )
