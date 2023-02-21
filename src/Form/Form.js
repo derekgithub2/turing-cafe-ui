@@ -2,7 +2,7 @@ import React from 'react'
 import './Form.css'
 import { useState } from 'react'
 
-const Form = ({props}) => {
+const Form = (props) => {
 
     const [name, setName] = useState('');
     const [date, setDate] = useState('');
