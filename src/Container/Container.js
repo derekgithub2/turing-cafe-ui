@@ -4,7 +4,7 @@ import Card from '../Card/Card'
 
 const Container = ({ress}) => {
 
-    const existingRes = reservations.map(res => 
+    const existingRes = ress.map(res => 
         <Card 
             key={res.id}
             id={res.id}
